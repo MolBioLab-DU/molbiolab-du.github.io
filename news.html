@@ -1,0 +1,34 @@
+---
+layout: default
+title: News and Events | Molecular Biology Lab
+description: Latest news and events from Molecular Biology Lab, Department of Biochemistry and Molecular Biology, University of Dhaka
+permalink: /news/
+image: https://molbiolab.du.ac.bd/static/media/mol-bio-lab.jpg
+---
+
+<section class="news_section">
+  <div class="container_custom">
+    <div class="news_container">
+      <h1 class="news_title">News and Events</h1>
+      <div class="news_main">
+        {% for item in site.data.news %}
+        <div class="news_block">
+          <div class="news_img">
+            <img alt="{{ item.title }}" src="{{ item.image }}"/>
+          </div>
+          <div class="news_text_block">
+            <div class="news_date">{{ item.date }}</div>
+            <div class="news_item_title">{{ item.title }}</div>
+            <div class="news_description">
+              <p>{{ item.description }}</p>
+            </div>
+            {% if item.link %}
+            <a href="{{ item.link }}" class="read_more_link" target="_blank" rel="noreferrer">Read More →</a>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

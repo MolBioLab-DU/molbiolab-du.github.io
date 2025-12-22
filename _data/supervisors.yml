@@ -1,0 +1,16 @@
+- name: "Haseena Khan, PhD"
+  designation: "Professor"
+  institution: "University Grants Commission (Bangladesh)"
+  image: "https://cdn.sanity.io/images/r6m76v2w/production/6c2b2382b3c5f34660d154478286a11c74336073-435x524.png"
+
+- name: "Mohammad Riazul Islam, PhD"
+  designation: "Professor"
+  department: "Dept. of Biochemistry and Molecular Biology"
+  institution: "University of Dhaka"
+  image: "https://cdn.sanity.io/images/r6m76v2w/production/d31ac6d2d49b7c2afbe5768fe047ad464916d15e-500x500.png"
+
+- name: "Farhana Tasnim Chowdhury"
+  designation: "Assistant Professor"
+  department: "Dept. of Biochemistry and Molecular Biology"
+  institution: "University of Dhaka"
+  image: "https://cdn.sanity.io/images/r6m76v2w/production/4f1e767748a51084232096a670e9a04ec145585f-500x500.png"

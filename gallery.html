@@ -1,0 +1,56 @@
+---
+layout: default
+title: Gallery | Molecular Biology Lab
+permalink: /gallery
+---
+
+<section class="gallery_page_section">
+  <div class="container_custom">
+    <div class="gallery_page_container">
+
+      <h1 class="gallery_page_title">Gallery</h1>
+
+      <div class="gallery_page_main">
+        {% for image in site.data.gallery.images %}
+          <div class="photo_container">
+            <img src="{{ image }}" alt="Gallery image">
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="gallery_lightbox" id="galleryLightbox">
+  <img src="" alt="">
+</div>
+
+<!-- PAGE JS -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".photo_container img");
+  const lightbox = document.getElementById("galleryLightbox");
+  const lightboxImg = lightbox.querySelector("img");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = "flex";
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      lightbox.style.display = "none";
+      lightboxImg.src = "";
+    }
+  });
+});
+</script>

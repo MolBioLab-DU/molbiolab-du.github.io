@@ -1,3 +1,382 @@
-<h1> Molecular Biology Lab DU Website </h1>
+---
+layout: default
+title: Molecular Biology Lab | University of Dhaka
+description: Molecular Biology Lab is a research laboratory of the Department of Biochemistry and Molecular Biology, University of Dhaka
+permalink: /
+---
 
-<p> Welcome to the Molecular Biology Lab at DU! Our lab focuses on cutting-edge research in molecular biology, genetics, and biotechnology. We are dedicated to advancing scientific knowledge and training the next generation of scientists. </p>
+<section class="intro_section">
+  <div class="intro_container">
+    <div class="carousel_custom">
+      <!-- Slider will be initialized by JavaScript -->
+      <div class="carousel_slides">
+        {% for slide in site.data.slider_images %}
+        <div class="carousel_item_custom">
+          <div class="carousel_img" style='background-image: linear-gradient(0deg, rgba(25, 23, 23, 0.35), rgba(25, 23, 23, 0.35)), url("{{ slide.image }}");'></div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="carousel_control_left">
+        <button class="control_btn" aria-label="Previous slide">
+          <img alt="" class="arrow" src="/assets/media/left_arrow_white.070eb82390aad5854d53c75a20e7fd5b.svg"/>
+        </button>
+      </div>
+      <div class="carousel_control_right">
+        <button class="control_btn" aria-label="Next slide">
+          <img alt="" class="arrow" src="/assets/media/right_arrow_white.a041579f4aa2d1b8611b84479a11ab66.svg"/>
+        </button>
+      </div>
+    </div>
+    <div class="intro_texts">
+      <div aria-label="MOLECULAR" class="intro_title" role="heading">
+        {% assign letters = "MOLECULAR" | split: "" %}
+        {% for letter in letters %}
+        <h1 aria-hidden="true" style="animation-delay: {{ 0.5 | plus: forloop.index0 | times: 0.1 }}s;">{{ letter }}</h1>
+        {% endfor %}
+      </div>
+      <div aria-label="BIOLOGY" class="intro_title" role="heading">
+        {% assign letters = "BIOLOGY" | split: "" %}
+        {% for letter in letters %}
+        <h1 aria-hidden="true" style="animation-delay: {{ 0.5 | plus: forloop.index0 | times: 0.1 }}s;">{{ letter }}</h1>
+        {% endfor %}
+      </div>
+      <div aria-label="LAB" class="intro_title" role="heading">
+        {% assign letters = "LAB" | split: "" %}
+        {% for letter in letters %}
+        <h1 aria-hidden="true" style="animation-delay: {{ 0.5 | plus: forloop.index0 | times: 0.1 }}s;">{{ letter }}</h1>
+        {% endfor %}
+      </div>
+      <div class="intro_subtitle intro_subtitle_animation">
+        <h4>Dept. of Biochemistry and Molecular Biology</h4>
+        <h4>University of Dhaka</h4>
+      </div>
+      <div class="intro_du_logo intro_logo_animation">
+        <img alt="University of Dhaka" src="/assets/media/du_logo.653d62556535fe326a48.png"/>
+      </div>
+    </div>
+  </div>
+  <div class="top_circle_container">
+    <div class="top_circle"></div>
+  </div>
+  <div class="bottom_circle_container">
+    <div class="bottom_circle"></div>
+  </div>
+</section>
+
+<section class="about_section">
+  <div class="about_container">
+    <div class="about_inner">
+      <div class="col-md-6 about_right_container">
+        <h1 class="about_title">WHO<br/>WE<br/>ARE</h1>
+        <img alt="about_img" class="img-fluid about_img" src="/assets/media/about_img.d9bed4bdb0bfb038b464.png"/>
+      </div>
+      <div class="col-md-6 about_text_container">
+        <div>
+          <p class="about_text">
+            {{ site.data.who_we_are.text }}
+            <a class="about_text hover:underline" href="{{ site.data.who_we_are.read_more_link }}">see more</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="papers_section">
+  <div class="container_custom">
+    <div class="papers_container">
+      <h1 class="papers_title">Key Research Papers</h1>
+      <div class="papers_grid">
+        {% for paper in site.data.key_research_papers %}
+        <div class="paper_card_wrapper">
+          <a class="paper_card_link" href="{{ paper.link }}" rel="noreferrer" target="_blank">
+            <div class="paper_card">
+              <div class="paper_img" style='background-image: url("{{ paper.image }}");'></div>
+              <div class="paper_card_body">
+                <p class="paper_title">{{ paper.title }}</p>
+                <p class="paper_authors">{{ paper.authors }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="indicator">
+        <button aria-label="Previous" class="control_btn prev_btn">
+          <img alt="" class="arrow_left" src="/assets/media/left_arrow_green.1ffc2a12cba9c1aa8c425d81e4568837.svg"/>
+        </button>
+        <div class="slide_dots_container">
+          {% for i in (1..5) %}
+          <div class="indicator_circle {% if forloop.first %}circle_bg{% else %}circle_border{% endif %}"></div>
+          {% endfor %}
+        </div>
+        <button aria-label="Next" class="control_btn next_btn">
+          <img alt="" class="arrow_right" src="/assets/media/right_arrow_green.f903ea96130af2ec09dd057b223d79e6.svg"/>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="supervisors_section">
+  <div class="container_custom">
+    <div class="supervisors_container">
+      <h1 class="supervisors_title">Supervisors</h1>
+      <div class="supervisors_card_wrapper">
+        {% for supervisor in site.data.supervisors %}
+        <div class="supervisor_card">
+          <img alt="supervisor_img" class="supervisor_img" src="{{ supervisor.image }}"/>
+          <div class="supervisor_info_wrapper">
+            <div class="name">
+              <span>{{ supervisor.name }}</span>
+            </div>
+            <p class="designation">{{ supervisor.designation }}</p>
+            {% if supervisor.department %}
+            <p class="department">{{ supervisor.department }}</p>
+            {% endif %}
+            <p class="institution">{{ supervisor.institution }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Carousel fixes */
+.carousel_custom {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel_slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel_item_custom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel_item_custom.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel_img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Key Research Papers Grid Layout */
+.papers_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .papers_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .papers_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .papers_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.paper_card_wrapper {
+  width: 100%;
+}
+
+.paper_card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.paper_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.paper_img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.paper_card_body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.paper_title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d5f3f;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.paper_authors {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.paper_card_link {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.paper_card_link:hover {
+  text-decoration: none;
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.slide_dots_container {
+  display: flex;
+  gap: 10px;
+}
+
+.indicator_circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.circle_bg {
+  background-color: #5a9f7a;
+}
+
+.circle_border {
+  border: 2px solid #5a9f7a;
+  background-color: transparent;
+}
+
+.indicator_circle:hover {
+  transform: scale(1.2);
+}
+</style>
+
+<script>
+// Carousel functionality
+(function() {
+  const slides = document.querySelectorAll('.carousel_item_custom');
+  const prevBtn = document.querySelector('.carousel_control_left .control_btn');
+  const nextBtn = document.querySelector('.carousel_control_right .control_btn');
+  let currentSlide = 0;
+
+  function showSlide(n) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  if (slides.length > 0) {
+    showSlide(0);
+    
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+
+    // Auto-advance every 5 seconds
+    setInterval(nextSlide, 5000);
+  }
+})();
+
+// Key Research Papers Pagination
+(function() {
+  const papers = document.querySelectorAll('.paper_card_wrapper');
+  const dots = document.querySelectorAll('.indicator_circle');
+  const prevBtn = document.querySelector('.papers_section .prev_btn');
+  const nextBtn = document.querySelector('.papers_section .next_btn');
+  const itemsPerPage = 4;
+  let currentPage = 0;
+  const totalPages = Math.ceil(papers.length / itemsPerPage);
+
+  function showPage(page) {
+    currentPage = (page + totalPages) % totalPages;
+    
+    papers.forEach((paper, index) => {
+      const startIndex = currentPage * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+      
+      if (index >= startIndex && index < endIndex) {
+        paper.style.display = 'block';
+      } else {
+        paper.style.display = 'none';
+      }
+    });
+
+    dots.forEach((dot, index) => {
+      if (index === currentPage) {
+        dot.classList.remove('circle_border');
+        dot.classList.add('circle_bg');
+      } else {
+        dot.classList.remove('circle_bg');
+        dot.classList.add('circle_border');
+      }
+    });
+  }
+
+  if (papers.length > 0) {
+    showPage(0);
+    
+    if (prevBtn) prevBtn.addEventListener('click', () => showPage(currentPage - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => showPage(currentPage + 1));
+    
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => showPage(index));
+    });
+  }
+})();
+</script>

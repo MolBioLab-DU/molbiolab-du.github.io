@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link href="/favicon.ico" rel="icon"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#000000"/>
+
+  <meta name="description"
+        content="Molecular Biology Lab is a research laboratory of the Department of Biochemistry and Molecular Biology, University of Dhaka"/>
+
+  <!-- Schema.org -->
+  <meta itemprop="name" content="MOLBIOLAB"/>
+  <meta itemprop="description"
+        content="Molecular Biology Lab is a research laboratory of the Department of Biochemistry and Molecular Biology, University of Dhaka"/>
+  
+
+  <!-- Open Graph -->
+  <meta property="og:url" content="http://localhost:4000/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Molecular Biology Lab | University of Dhaka"/>
+  <meta property="og:description"
+        content="Molecular Biology Lab is a research laboratory of the Department of Biochemistry and Molecular Biology, University of Dhaka"/>
+  
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Molecular Biology Lab | University of Dhaka"/>
+  <meta name="twitter:description"
+        content="Molecular Biology Lab is a research laboratory of the Department of Biochemistry and Molecular Biology, University of Dhaka"/>
+  
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        crossorigin="anonymous"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap"
+        rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap"
+        rel="stylesheet"/>
+
+  <title>Molecular Biology Lab | University of Dhaka</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/main.e3d231ef.css"/>
+  <link rel="stylesheet" href="/assets/css/static-fixes.css"/>
+
+  <!-- Header color variable -->
+  
+  <style>
+    :root {
+      --header-color: black;
+    }
+
+    .site-header {
+      color: var(--header-color);
+    }
+
+    .hamburger-line {
+      background: var(--header-color);
+      height: 3px;
+      width: 32px;
+      left: 8px;
+      position: absolute;
+      border-radius: 9em;
+      transition: 0.4s cubic-bezier(0,0,0,1);
+    }
+
+    .hamburger-line.line-1 { top: 13px; }
+    .hamburger-line.line-2 { top: 23px; transition: 0.2s cubic-bezier(0,0,0,1); }
+    .hamburger-line.line-3 { top: 33px; }
+  </style>
+
+  <script defer src="/assets/js/simple-static.js"></script>
+</head>
+
+<body style="height:100%;">
+<div id="root">
+  <div class="container_all">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="navbar_container">
+
+        <!-- Desktop -->
+        <div class="menubar_pc">
+          <ul class="navbar_list navbar_list_style">
+            <li class="navbar_logo">
+              <a href="/">
+                <img src="/assets/media/mol-bio-lab.118f27885e694218636be1b00144e91f.svg"
+                     alt="mol-bio-lab" class="navbar_logo_img"/>
+              </a>
+            </li>
+            <li class="navbar_item navbar_item_margin"><a href="/">Home</a></li>
+            <li class="navbar_item navbar_item_margin">About Us</li>
+            <li class="navbar_item navbar_item_margin">Research</li>
+            <li class="navbar_item"><a href="/">News & Events</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile -->
+        <div class="menubar_mobile">
+          <div class="menubar_mobile_wrapper">
+            <div class="logo_n_btn">
+              <a href="/">
+                <img src="/assets/media/mol-bio-lab.118f27885e694218636be1b00144e91f.svg"
+                     alt="mol-bio-lab" class="navbar_logo_img"/>
+              </a>
+
+              <div class="hamburger-react" role="button" tabindex="0"
+                   style="cursor:pointer;height:48px;width:48px;position:relative;">
+                <div class="hamburger-line line-1"></div>
+                <div class="hamburger-line line-2"></div>
+                <div class="hamburger-line line-3"></div>
+              </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="menu_main menu_main_hidden">
+              <div class="menu_main_wrapper">
+                <div class="accordion" id="accordionExample">
+
+                  <a href="/">
+                    <div class="accordion-item accordion_item_custom">
+                      <h2 class="accordion-header non_accordion">Home</h2>
+                    </div>
+                  </a>
+
+                  <div class="accordion-item accordion_item_custom">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button accordion_button_custom collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne">
+                        About Us
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse">
+                      <div class="accordion-body accordion_body_custom">
+                        <a href="/ourlab">Our Lab</a><br/>
+                        <a href="/supervisors">Supervisors</a><br/>
+                        <a href="/labmembers">Lab Members</a><br/>
+                        <a href="/gallery">Gallery</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item accordion_item_custom">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button accordion_button_custom collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo">
+                        Research
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body accordion_body_custom">
+                        <a href="/current-research">Current Research</a><br/>
+                        <a href="/publications">Publications</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item accordion_item_custom">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button accordion_button_custom collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree">
+                        News and Events
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse">
+                      <div class="accordion-body accordion_body_custom">
+                        <a href="/news">News</a><br/>
+                        <a href="/molbiolab-in-the-news">Molbiolab in the news</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section class="intro_section">
+  <div class="intro_container">
+    <div class="carousel_custom">
+      <!-- Slider will be initialized by JavaScript -->
+      <div class="carousel_slides">
+        
+        <div class="carousel_item_custom">
+          <div class="carousel_img" style='background-image: linear-gradient(0deg, rgba(25, 23, 23, 0.35), rgba(25, 23, 23, 0.35)), url("https://cdn.sanity.io/images/r6m76v2w/production/fcf5f9b85599c7eb587d5aa65f278eca52eed7c9-4393x2471.jpg");'></div>
+        </div>
+        
+        <div class="carousel_item_custom">
+          <div class="carousel_img" style='background-image: linear-gradient(0deg, rgba(25, 23, 23, 0.35), rgba(25, 23, 23, 0.35)), url("https://cdn.sanity.io/images/r6m76v2w/production/3551b65f2190e205ecdb8abddba19e842ff282c3-960x540.jpg");'></div>
+        </div>
+        
+        <div class="carousel_item_custom">
+          <div class="carousel_img" style='background-image: linear-gradient(0deg, rgba(25, 23, 23, 0.35), rgba(25, 23, 23, 0.35)), url("https://cdn.sanity.io/images/r6m76v2w/production/faff6b0d2f0338706e1adb6ad74a980c07e879aa-1920x1080.jpg");'></div>
+        </div>
+        
+      </div>
+      <div class="carousel_control_left">
+        <button class="control_btn" aria-label="Previous slide">
+          <img alt="" class="arrow" src="/assets/media/left_arrow_white.070eb82390aad5854d53c75a20e7fd5b.svg"/>
+        </button>
+      </div>
+      <div class="carousel_control_right">
+        <button class="control_btn" aria-label="Next slide">
+          <img alt="" class="arrow" src="/assets/media/right_arrow_white.a041579f4aa2d1b8611b84479a11ab66.svg"/>
+        </button>
+      </div>
+    </div>
+    <div class="intro_texts">
+      <div aria-label="MOLECULAR" class="intro_title" role="heading">
+        
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.05s;">M</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.15s;">O</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.25s;">L</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.35s;">E</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.45s;">C</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.55s;">U</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.65s;">L</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.75s;">A</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.85s;">R</h1>
+        
+      </div>
+      <div aria-label="BIOLOGY" class="intro_title" role="heading">
+        
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.05s;">B</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.15s;">I</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.25s;">O</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.35s;">L</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.45s;">O</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.55s;">G</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.65s;">Y</h1>
+        
+      </div>
+      <div aria-label="LAB" class="intro_title" role="heading">
+        
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.05s;">L</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.15s;">A</h1>
+        
+        <h1 aria-hidden="true" style="animation-delay: 0.25s;">B</h1>
+        
+      </div>
+      <div class="intro_subtitle intro_subtitle_animation">
+        <h4>Dept. of Biochemistry and Molecular Biology</h4>
+        <h4>University of Dhaka</h4>
+      </div>
+      <div class="intro_du_logo intro_logo_animation">
+        <img alt="University of Dhaka" src="/assets/media/du_logo.653d62556535fe326a48.png"/>
+      </div>
+    </div>
+  </div>
+  <div class="top_circle_container">
+    <div class="top_circle"></div>
+  </div>
+  <div class="bottom_circle_container">
+    <div class="bottom_circle"></div>
+  </div>
+</section>
+
+<section class="about_section">
+  <div class="about_container">
+    <div class="about_inner">
+      <div class="col-md-6 about_right_container">
+        <h1 class="about_title">WHO<br/>WE<br/>ARE</h1>
+        <img alt="about_img" class="img-fluid about_img" src="/assets/media/about_img.d9bed4bdb0bfb038b464.png"/>
+      </div>
+      <div class="col-md-6 about_text_container">
+        <div>
+          <p class="about_text">
+            Molecular Biology Lab is a research laboratory of the Department of Biochemistry and Molecular Biology, University of Dhaka. Young enthusiastic researchers are working in this lab to uncover the mysteries of molecular biology. The scintillating journey of Molecular Biology Lab commenced in 1994 under the auspices of Professor Haseena Khan. The lab was established with the goal of pioneering research in Molecular Biology in Bangladesh. The lab first started its research activity with nodule bacteria. The transition to Jute research started in 1999 with the Jute Genome Project which aimed at unveiling the genomic mystery of Jute. The Project started with studies and investigation of different molecular markers through RAPD and RFLP analysis...
+            <a class="about_text hover:underline" href="/ourlab">see more</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="papers_section">
+  <div class="container_custom">
+    <div class="papers_container">
+      <h1 class="papers_title">Key Research Papers</h1>
+      <div class="papers_grid">
+        
+        <div class="paper_card_wrapper">
+          <a class="paper_card_link" href="https://www.researchgate.net/publication/319178617_Draft_Genome_Sequence_of_Grammothele_lineata_SDL-CO-2015-1_a_Jute_Endophyte_with_a_Potential_for_Paclitaxel_Biosynthesis#fullTextFileContent" rel="noreferrer" target="_blank">
+            <div class="paper_card">
+              <div class="paper_img" style='background-image: url("https://cdn.sanity.io/images/r6m76v2w/production/5a4b08e3ee224510ccccba6bc8a1530fd8730cfc-520x455.webp");'></div>
+              <div class="paper_card_body">
+                <p class="paper_title">Draft Genome Sequence of Grammothele lineata SDL-CO-2015-1, a Jute Endophyte with a Potential for Paclitaxel Biosynthesis.</p>
+                <p class="paper_authors">Avizit Das, Oly Ahmed, A. K. M. Abdul Baten, Samira Bushra, M.Tariqul Islam, Ahlan Sabah Ferdo...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="paper_card_wrapper">
+          <a class="paper_card_link" href="https://www.researchgate.net/publication/351914059_A_plant_endophyte_Staphylococcus_hominis_strain_MBL_AB63_produces_a_novel_lantibiotic_homicorcin_and_a_position_one_variant" rel="noreferrer" target="_blank">
+            <div class="paper_card">
+              <div class="paper_img" style='background-image: url("https://cdn.sanity.io/images/r6m76v2w/production/57655299c252ac464de867fc2b51fdbdaf60fc15-640x312.jpg");'></div>
+              <div class="paper_card_body">
+                <p class="paper_title">A plant endophyte Staphylococcus hominis strain MBL_AB63 produces a novel lantibiotic, homicorcin and a position one variant.</p>
+                <p class="paper_authors">M. Aftab Uddin, Shammi Akter, Mahbuba Ferdous, Badrul Haidar, Al Amin,A. H. M. Shofiul Islam M...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="paper_card_wrapper">
+          <a class="paper_card_link" href="https://www.researchgate.net/publication/338616920_Proteome_Analyses_Reveal_Macrophomina_phaseolina_'s_Survival_Tools_When_Challenged_by_Burkholderia_contaminans_NZ" rel="noreferrer" target="_blank">
+            <div class="paper_card">
+              <div class="paper_img" style='background-image: url("https://cdn.sanity.io/images/r6m76v2w/production/b3a697b879e618b76a7aeed00e7a8b6465481bfd-640x241.jpg");'></div>
+              <div class="paper_card_body">
+                <p class="paper_title">Proteome Analyses Reveal Macrophomina phaseolina 's Survival Tools When Challenged by Burkholderia contaminans NZ.</p>
+                <p class="paper_authors">Nazia R. Zaman, Bhoj Kumar, Zulia Nasrin, Mohammad R. Islam, Tushar K. Maiti and Haseena Khan.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="paper_card_wrapper">
+          <a class="paper_card_link" href="https://www.researchgate.net/publication/11126407_DNA_fingerprinting_of_jute_germplasm_by_RAPD" rel="noreferrer" target="_blank">
+            <div class="paper_card">
+              <div class="paper_img" style='background-image: url("https://cdn.sanity.io/images/r6m76v2w/production/5a1ffe358e56987305c51c901d84369edb46b9aa-640x414.jpg");'></div>
+              <div class="paper_card_body">
+                <p class="paper_title">DNA Fingerprinting of Jute Germplasm by RAPD.</p>
+                <p class="paper_authors">Mohammad Belayat Hossain, Samiul Haque and Haseena Khan.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="paper_card_wrapper">
+          <a class="paper_card_link" href="https://www.researchgate.net/publication/329868968_Genome_of_Tenualosa_ilisha_from_the_river_Padma_Bangladesh" rel="noreferrer" target="_blank">
+            <div class="paper_card">
+              <div class="paper_img" style='background-image: url("https://cdn.sanity.io/images/r6m76v2w/production/588cd8f8f53315b022195a5ec56daf03b8b119f6-599x452.jpg");'></div>
+              <div class="paper_card_body">
+                <p class="paper_title">Genome of Tenualosa ilisha from the river Padma, Bangladesh.</p>
+                <p class="paper_authors">Avizit Das, Peter Ianakiev, Abdul Baten, Rifath Nehleen, Tasneem Ehsan, Oly Ahmed, Mohammad Ri...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+      <div class="indicator">
+        <button aria-label="Previous" class="control_btn prev_btn">
+          <img alt="" class="arrow_left" src="/assets/media/left_arrow_green.1ffc2a12cba9c1aa8c425d81e4568837.svg"/>
+        </button>
+        <div class="slide_dots_container">
+          
+          <div class="indicator_circle circle_bg"></div>
+          
+          <div class="indicator_circle circle_border"></div>
+          
+          <div class="indicator_circle circle_border"></div>
+          
+          <div class="indicator_circle circle_border"></div>
+          
+          <div class="indicator_circle circle_border"></div>
+          
+        </div>
+        <button aria-label="Next" class="control_btn next_btn">
+          <img alt="" class="arrow_right" src="/assets/media/right_arrow_green.f903ea96130af2ec09dd057b223d79e6.svg"/>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="supervisors_section">
+  <div class="container_custom">
+    <div class="supervisors_container">
+      <h1 class="supervisors_title">Supervisors</h1>
+      <div class="supervisors_card_wrapper">
+        
+        <div class="supervisor_card">
+          <img alt="supervisor_img" class="supervisor_img" src="https://cdn.sanity.io/images/r6m76v2w/production/6c2b2382b3c5f34660d154478286a11c74336073-435x524.png"/>
+          <div class="supervisor_info_wrapper">
+            <div class="name">
+              <span>Haseena Khan, PhD</span>
+            </div>
+            <p class="designation">Professor</p>
+            
+            <p class="institution">University Grants Commission (Bangladesh)</p>
+          </div>
+        </div>
+        
+        <div class="supervisor_card">
+          <img alt="supervisor_img" class="supervisor_img" src="https://cdn.sanity.io/images/r6m76v2w/production/d31ac6d2d49b7c2afbe5768fe047ad464916d15e-500x500.png"/>
+          <div class="supervisor_info_wrapper">
+            <div class="name">
+              <span>Mohammad Riazul Islam, PhD</span>
+            </div>
+            <p class="designation">Professor</p>
+            
+            <p class="department">Dept. of Biochemistry and Molecular Biology</p>
+            
+            <p class="institution">University of Dhaka</p>
+          </div>
+        </div>
+        
+        <div class="supervisor_card">
+          <img alt="supervisor_img" class="supervisor_img" src="https://cdn.sanity.io/images/r6m76v2w/production/4f1e767748a51084232096a670e9a04ec145585f-500x500.png"/>
+          <div class="supervisor_info_wrapper">
+            <div class="name">
+              <span>Farhana Tasnim Chowdhury</span>
+            </div>
+            <p class="designation">Assistant Professor</p>
+            
+            <p class="department">Dept. of Biochemistry and Molecular Biology</p>
+            
+            <p class="institution">University of Dhaka</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Carousel fixes */
+.carousel_custom {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel_slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel_item_custom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel_item_custom.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel_img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Key Research Papers Grid Layout */
+.papers_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .papers_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .papers_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .papers_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.paper_card_wrapper {
+  width: 100%;
+}
+
+.paper_card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.paper_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.paper_img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.paper_card_body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.paper_title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d5f3f;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.paper_authors {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.paper_card_link {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.paper_card_link:hover {
+  text-decoration: none;
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.slide_dots_container {
+  display: flex;
+  gap: 10px;
+}
+
+.indicator_circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.circle_bg {
+  background-color: #5a9f7a;
+}
+
+.circle_border {
+  border: 2px solid #5a9f7a;
+  background-color: transparent;
+}
+
+.indicator_circle:hover {
+  transform: scale(1.2);
+}
+</style>
+
+<script>
+// Carousel functionality
+(function() {
+  const slides = document.querySelectorAll('.carousel_item_custom');
+  const prevBtn = document.querySelector('.carousel_control_left .control_btn');
+  const nextBtn = document.querySelector('.carousel_control_right .control_btn');
+  let currentSlide = 0;
+
+  function showSlide(n) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  if (slides.length > 0) {
+    showSlide(0);
+    
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+
+    // Auto-advance every 5 seconds
+    setInterval(nextSlide, 5000);
+  }
+})();
+
+// Key Research Papers Pagination
+(function() {
+  const papers = document.querySelectorAll('.paper_card_wrapper');
+  const dots = document.querySelectorAll('.indicator_circle');
+  const prevBtn = document.querySelector('.papers_section .prev_btn');
+  const nextBtn = document.querySelector('.papers_section .next_btn');
+  const itemsPerPage = 4;
+  let currentPage = 0;
+  const totalPages = Math.ceil(papers.length / itemsPerPage);
+
+  function showPage(page) {
+    currentPage = (page + totalPages) % totalPages;
+    
+    papers.forEach((paper, index) => {
+      const startIndex = currentPage * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+      
+      if (index >= startIndex && index < endIndex) {
+        paper.style.display = 'block';
+      } else {
+        paper.style.display = 'none';
+      }
+    });
+
+    dots.forEach((dot, index) => {
+      if (index === currentPage) {
+        dot.classList.remove('circle_border');
+        dot.classList.add('circle_bg');
+      } else {
+        dot.classList.remove('circle_bg');
+        dot.classList.add('circle_border');
+      }
+    });
+  }
+
+  if (papers.length > 0) {
+    showPage(0);
+    
+    if (prevBtn) prevBtn.addEventListener('click', () => showPage(currentPage - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => showPage(currentPage + 1));
+    
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => showPage(index));
+    });
+  }
+})();
+</script>
+    </main>
+
+    <!-- FOOTER -->
+    <section class="contact_section">
+      <div class="container_custom">
+        <div class="contact_container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="contact_us_wrapper">
+                <p class="contact_title_common">Contact Us</p>
+                <div class="contact_us_info">
+                  <p>Phone: 880-2-9661900-ext (7645)</p>
+                  <a href="mailto:info@molbiolab.du.ac.bd">Email: info@molbiolab.du.ac.bd</a>
+                </div>
+                <p class="follow_us_title contact_title_common">Follow Us</p>
+                <div class="follow_us_icons">
+                  <a href="https://www.facebook.com/Molecular-Biology-Lab-132566566820274" rel="noreferrer" target="_blank">
+                    <img alt="facebook" src="/assets/media/fb_icon.cac993880e819819c6db27e6e3a82784.svg"/>
+                  </a>
+                  <a href="https://www.linkedin.com/company/molbiolabdu/" rel="noreferrer" target="_blank">
+                    <img alt="linkedin" src="/assets/media/lkd_icon.37c01ba6c4910647f0287b19a94ccf43.svg"/>
+                  </a>
+                  <a href="https://www.researchgate.net/lab/Molecular-Biology-Lab-Haseena-Khan" rel="noreferrer" target="_blank">
+                    <img alt="researchGate" src="/assets/media/rg_icon.cfc996983d9eeeb2604fa330e409d3f6.svg"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="quick_links_wrapper">
+                <p class="contact_title_common">Quick Links</p>
+                <div class="quick_links_info">
+                  <p><a href="/ourlab">About our lab</a></p>
+                  <p><a href="/labmembers">Our Team</a></p>
+                  <p><a href="/publications">Publications</a></p>
+                  <p><a href="/">News and Events</a></p>
+                  <p><a href="/gallery">Gallery</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="find_us_wrapper">
+                <p class="contact_title_common">Find Us</p>
+                <div class="find_us_info">
+                  Molecular Biology Laboratory,<br/>
+                  Dept. of Biochemistry and Molecular Biology,<br/>
+                  University of Dhaka, Dhaka-1000.
+                </div>
+                <div class="institution_logo">
+                  <img alt="Molecular Biology Lab" src="/assets/media/mol-bio-lab.118f27885e694218636be1b00144e91f.svg"/>
+                  <a href="https://du.ac.bd/" rel="noreferrer" target="_blank">
+                    <img alt="University of Dhaka" src="/assets/media/du_logo.413cf3c1cbd5555b88ceb0860b7d3bf4.svg"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div>Copyright © 2025 - Moleculer Biology Lab | All Rights Reserved</div>
+            <div class="hr_line"></div>
+            <div class="creator_1">
+              Initial version of the site is designed and developed by Md Nazid Bin Ibrahim
+              <a href="https://www.kaiserahmed.net/" rel="noreferrer" target="_blank">S M Kaiser Ahmed</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+</html>

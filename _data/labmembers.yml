@@ -1,0 +1,117 @@
+current:
+  - name: Rezaul Rana
+    designation: Research Associate
+    session:
+    email: rezaul.rana17@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/905ff9c1acc617e268b2815a8da08803e87de82e-2032x2032.jpg
+
+  - name: Md Shamim Miah
+    designation: Lab Attendant
+    session: "01794182066"
+    email: miahshamim25800@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/8770ece16bb6b2acb20f4eae6d2e4c9f095ada2d-1504x1280.jpg
+
+  - name: Md Amzad Hossain
+    designation: PhD Student
+    session: 2022-23
+    email: amzadgeb05@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/bdcd472c6f0ba5c1ba97986b11598f44b2375017-2537x2545.jpg
+
+  - name: Fahmida Anika Khan
+    designation: PhD Student
+    session: 2022-23
+    email: fahmidaanika-2014716955@bot.du.ac.bd
+    image: https://cdn.sanity.io/images/r6m76v2w/production/d2890871587730b76f3e08adde645c1e06be9c43-472x562.jpg
+
+  - name: Md Rakibul Islam
+    designation: MS Thesis Student
+    session: 2021-22
+    email: marufislammaruf000@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/067c7a4b97ab85cdc8e4279421b425058e2f8f69-3455x2921.jpg
+
+  - name: Rabeya
+    designation: MS Thesis Student
+    session: 2021-22
+    email: rabeya1541999@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/6d06c6bf8d8dd4d9552f656496358a7d2b4a2e3d-939x1141.jpg
+
+  - name: Jayoti Mandal
+    designation: MS Thesis Student
+    session: 2021-22
+    email: jayotimandal@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/10aef64ea220680e3ea438b51efee97d563258f5-3000x4000.jpg
+
+  - name: Rubel Hossain
+    designation: Laboratory Technician
+    session: "01748029615"
+    email: rubel1996du@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/3b90c9a4b776ef32c268f0e301a34326db10e2bb-632x699.jpg
+
+
+alumni:
+  - name: Al Amin
+    designation: PhD Student and Lab Manager
+    session:
+    email: aamin.bio@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/1157be66a3de4d03251843e97768ab3e48cb1ec0-1971x1971.webp
+
+  - name: Mim Ara Haque Ovey
+    designation: MS Thesis Student
+    session: 2019-20
+    email: mimarahaque786du@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/91091f0ab6723b96a42664f66a4b2b230f946679-1900x1900.jpg
+
+  - name: Md. Arko Ayon Chowdhury
+    designation: MS Thesis Student
+    session: 2019-20
+    email: arko.bmb.du@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/7229efa38c677af064b15b27aab0b716448cec61-2000x2000.webp
+
+  - name: Sadia Noor Mou
+    designation: MS Thesis Student
+    session: 2019-20
+    email: sadianoor-2015417631@bmb.du.ac.bd
+    image: https://cdn.sanity.io/images/r6m76v2w/production/5f1304a99a562f6c81997f96ba894f222b9025b6-1827x1827.webp
+
+  - name: Mishon Rahman
+    designation: MS Thesis Student
+    session: 2019-20
+    email: mishon.rahman.bmbdu15@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/d7d65ae87af6d2ad7526da740745fe9f41f88370-2000x2000.webp
+
+  - name: Afsana Akter Rupa
+    designation: MS Thesis Student
+    session: 2020-21
+    email: afsanarupa1@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/8f98e2d20259e7f4e1c518faa6b595bbaccf67d9-901x676.jpg
+
+  - name: Sharaf Aroni
+    designation: MS Thesis Student
+    session: 2020-21
+    email: sharafaroni97@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/0628005054ed2bf5054fc5abd6d0431080a5230b-1080x1080.jpg
+
+  - name: Shafi Ahmad Talukder
+    designation: MS Thesis Student
+    session: 2020-21
+    email: shafiahmadtalukderdu@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/ad1d3f133c4a46838ea9b20a8a2820ba572ddd12-960x960.jpg
+
+  - name: Jahid Hasan
+    designation: MS Thesis Student
+    session: 2020-21
+    email: jahid-2016114159@bmb.du.ac.bd
+    image: https://cdn.sanity.io/images/r6m76v2w/production/bd85b40a863118e4965412ece247108e5d0f0a26-1912x1911.jpg
+
+  - name: Md Enayet Ullah
+    designation: MS Thesis Student
+    session: 2017-18
+    email: enayetmdu@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/8938c2b8055c8954eeb8831e6902efde25cf4b38-1445x2048.jpg
+
+  - name: Tania Nazmun Nahar Tanwee
+    designation: MS Thesis Student
+    session: 2014-15
+    email: taniatanwee@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/8b85469bb5e71175dcd376c768851f4f49f3fc12-979x1324.jpg
+

@@ -1,0 +1,93 @@
+---
+layout: default
+title: Publications | Molecular Biology Lab
+description: Research publications from Molecular Biology Lab, Department of Biochemistry and Molecular Biology, University of Dhaka
+permalink: /publications/
+---
+
+<section class="publications_section">
+  <div class="container_custom">
+    <div class="publications_container">
+      <h1 class="publications_title">Publications</h1>
+      
+      {% assign publications_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+      
+      {% for year_group in publications_by_year %}
+      <div class="publication_year_section">
+        <h2 class="publication_year">{{ year_group.name }}</h2>
+        <ol class="publications_list">
+          {% for pub in year_group.items %}
+          <li class="publication_item">
+            <div class="publication_text">
+              {{ pub.authors }} ({{ pub.year }}). {{ pub.title }}. 
+              <em>{{ pub.journal }}</em>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.issue %}({{ pub.issue }}){% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}.
+              {% if pub.doi %}
+              <br><a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noreferrer">https://doi.org/{{ pub.doi }}</a>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+</section>
+
+<style>
+.publications_section {
+  padding: 60px 0;
+  min-height: 50vh;
+}
+
+.publications_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.publication_year_section {
+  margin-bottom: 40px;
+}
+
+.publication_year {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.publications_list {
+  list-style-position: outside;
+  padding-left: 25px;
+}
+
+.publication_item {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #444;
+}
+
+.publication_text {
+  text-align: justify;
+}
+
+.publication_text a {
+  color: #3498db;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.publication_text a:hover {
+  text-decoration: underline;
+}
+
+.publication_text em {
+  font-style: italic;
+}
+</style>

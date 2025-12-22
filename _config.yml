@@ -1,0 +1,34 @@
+# Jekyll Configuration for Molecular Biology Lab
+title: "Molecular Biology Lab | University of Dhaka"
+description: "Molecular Biology Lab is a research laboratory of the Department of Biochemistry and Molecular Biology, University of Dhaka"
+baseurl: ""
+# url: "https://molbiolab.du.ac.bd"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
