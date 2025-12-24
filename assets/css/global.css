@@ -5,17 +5,113 @@
    Base styles, fonts, variables, and utilities
    ========================================================================== */
 
-/* Body and Root Styles */
+/* Import Fonts First */
+@import url('fonts.css');
+
+/* OR use Google Fonts directly (recommended for now) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ==========================================================================
+   CSS CUSTOM PROPERTIES / VARIABLES
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --color-primary: #6cb156;
+  --color-primary-dark: #5a9f7a;
+  --color-text-dark: #333;
+  --color-text-light: #666;
+  --color-white: #fff;
+  --color-black: #000;
+  
+  /* Font Families - Using Montserrat as Mont replacement */
+  --font-thin: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-extralight: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-light: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-regular: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-book: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-semibold: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-bold: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heavy: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-black: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ==========================================================================
+   MONT FONT UTILITY CLASSES
+   Quick classes for applying different Mont weights
+   ========================================================================== */
+
+.font-thin,
+.Mont-Thin {
+  font-family: var(--font-thin) !important;
+  font-weight: 100 !important;
+}
+
+.font-extralight,
+.Mont-ExtraLight {
+  font-family: var(--font-extralight) !important;
+  font-weight: 200 !important;
+}
+
+.font-light,
+.Mont-Light {
+  font-family: var(--font-light) !important;
+  font-weight: 300 !important;
+}
+
+.font-regular,
+.Mont-Regular {
+  font-family: var(--font-regular) !important;
+  font-weight: 400 !important;
+}
+
+.font-book,
+.Mont-Book {
+  font-family: var(--font-book) !important;
+  font-weight: 450 !important;
+}
+
+.font-semibold,
+.Mont-SemiBold {
+  font-family: var(--font-semibold) !important;
+  font-weight: 600 !important;
+}
+
+.font-bold,
+.Mont-Bold {
+  font-family: var(--font-bold) !important;
+  font-weight: 700 !important;
+}
+
+.font-heavy,
+.Mont-Heavy {
+  font-family: var(--font-heavy) !important;
+  font-weight: 800 !important;
+}
+
+.font-black,
+.Mont-Black {
+  font-family: var(--font-black) !important;
+  font-weight: 900 !important;
+}
+
+/* ==========================================================================
+   BODY AND ROOT STYLES
+   ========================================================================== */
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Mont-Regular;
+  font-family: 'Montserrat', var(--font-regular);
+  font-weight: 400;
   margin: 0;
   padding: 0;
+  color: var(--color-text-dark);
+  line-height: 1.6;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 /* Container Styles */
@@ -49,9 +145,56 @@ img {
   height: auto;
 }
 
-/* Loader Component */
+/* ==========================================================================
+   TYPOGRAPHY - Default Font Applications
+   Apply Mont fonts to common elements
+   ========================================================================== */
+
+/* Headings use Heavy weight by default */
+h1, h2, h3 {
+  font-family: 'Montserrat', var(--font-heavy);
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+h4, h5, h6 {
+  font-family: 'Montserrat', var(--font-bold);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Paragraphs use Regular weight */
+p {
+  font-family: 'Montserrat', var(--font-regular);
+  font-weight: 400;
+}
+
+/* Links */
+a {
+  font-family: 'Montserrat', var(--font-regular);
+  font-weight: 400;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Buttons */
+button,
+.btn {
+  font-family: 'Montserrat', var(--font-semibold);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   LOADER COMPONENT
+   ========================================================================== */
+
 .loader_wrapper .loader_container {
-  background-color: #fff;
+  background-color: var(--color-white);
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -62,7 +205,7 @@ img {
   -webkit-animation: spin 1s ease-in-out infinite;
   border: 8px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  border-top-color: #6cb156;
+  border-top-color: var(--color-primary);
   display: inline-block;
   height: 70px;
   left: 0;
@@ -77,6 +220,7 @@ img {
 @keyframes spin {
   to {
     -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
   }
 }
 
@@ -94,12 +238,19 @@ img {
   display: none !important;
 }
 
-/* Smooth transitions for better UX */
+/* ==========================================================================
+   SMOOTH TRANSITIONS
+   ========================================================================== */
+
 .supervisor_card,
 .news_card,
 .publication_card {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
 
 /* Fade In Animation */
 @-webkit-keyframes fadeIn {
@@ -118,4 +269,41 @@ img {
   to {
     opacity: 1;
   }
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Utility animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s ease-out;
 }

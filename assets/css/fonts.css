@@ -1,0 +1,232 @@
+/* ==========================================================================
+   FONT DECLARATIONS - Mont Font Family
+   This file contains all the @font-face declarations for the Mont font family
+   ========================================================================== */
+
+/* 
+   NOTE: Since the original font files from the website are proprietary,
+   we're using Montserrat from Google Fonts as a replacement.
+   Montserrat is very similar to Mont and is open source.
+   
+   To use the actual Mont fonts, you would need to:
+   1. Purchase the Mont font family from its creator
+   2. Place the font files in /assets/fonts/
+   3. Update the URLs below to point to your local files
+*/
+
+/* Import Montserrat from Google Fonts as Mont replacement */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ==========================================================================
+   OPTION 1: Use Montserrat (Google Fonts) as Mont replacement
+   This is the recommended approach for now
+   ========================================================================== */
+
+/* Mont-Thin (100) */
+@font-face {
+  font-family: 'Mont-Thin';
+  src: local('Montserrat Thin'), local('Montserrat-Thin');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mont-ExtraLight (200) */
+@font-face {
+  font-family: 'Mont-ExtraLight';
+  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mont-Light (300) */
+@font-face {
+  font-family: 'Mont-Light';
+  src: local('Montserrat Light'), local('Montserrat-Light');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mont-Regular (400) - Most commonly used */
+@font-face {
+  font-family: 'Mont-Regular';
+  src: local('Montserrat Regular'), local('Montserrat-Regular');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mont-Book (450) */
+@font-face {
+  font-family: 'Mont-Book';
+  src: local('Montserrat Medium'), local('Montserrat-Medium');
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mont-SemiBold (600) */
+@font-face {
+  font-family: 'Mont-SemiBold';
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mont-Bold (700) - Commonly used for headings */
+@font-face {
+  font-family: 'Mont-Bold';
+  src: local('Montserrat Bold'), local('Montserrat-Bold');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mont-Heavy (800) - Used for major titles */
+@font-face {
+  font-family: 'Mont-Heavy';
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mont-Black (900) */
+@font-face {
+  font-family: 'Mont-Black';
+  src: local('Montserrat Black'), local('Montserrat-Black');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   OPTION 2: Local Font Files (commented out - use when you have the files)
+   Uncomment and update paths when you have the actual Mont font files
+   ========================================================================== */
+
+/*
+@font-face {
+  font-family: 'Mont-Black';
+  src: local('Mont-Black'),
+       url('../fonts/Mont-Black.woff2') format('woff2'),
+       url('../fonts/Mont-Black.woff') format('woff'),
+       url('../fonts/Mont-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mont-Bold';
+  src: local('Mont-Bold'),
+       url('../fonts/Mont-Bold.woff2') format('woff2'),
+       url('../fonts/Mont-Bold.woff') format('woff'),
+       url('../fonts/Mont-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mont-Book';
+  src: local('Mont-Book'),
+       url('../fonts/Mont-Book.woff2') format('woff2'),
+       url('../fonts/Mont-Book.woff') format('woff'),
+       url('../fonts/Mont-Book.ttf') format('truetype');
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mont-ExtraLight';
+  src: local('Mont-ExtraLight'),
+       url('../fonts/Mont-ExtraLight.woff2') format('woff2'),
+       url('../fonts/Mont-ExtraLight.woff') format('woff'),
+       url('../fonts/Mont-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mont-Heavy';
+  src: local('Mont-Heavy'),
+       url('../fonts/Mont-Heavy.woff2') format('woff2'),
+       url('../fonts/Mont-Heavy.woff') format('woff'),
+       url('../fonts/Mont-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mont-Light';
+  src: local('Mont-Light'),
+       url('../fonts/Mont-Light.woff2') format('woff2'),
+       url('../fonts/Mont-Light.woff') format('woff'),
+       url('../fonts/Mont-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mont-Regular';
+  src: local('Mont-Regular'),
+       url('../fonts/Mont-Regular.woff2') format('woff2'),
+       url('../fonts/Mont-Regular.woff') format('woff'),
+       url('../fonts/Mont-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mont-SemiBold';
+  src: local('Mont-SemiBold'),
+       url('../fonts/Mont-SemiBold.woff2') format('woff2'),
+       url('../fonts/Mont-SemiBold.woff') format('woff'),
+       url('../fonts/Mont-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mont-Thin';
+  src: local('Mont-Thin'),
+       url('../fonts/Mont-Thin.woff2') format('woff2'),
+       url('../fonts/Mont-Thin.woff') format('woff'),
+       url('../fonts/Mont-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* ==========================================================================
+   FONT STACK FALLBACKS
+   Define fallback font stacks for better cross-browser compatibility
+   ========================================================================== */
+
+:root {
+  --font-thin: 'Mont-Thin', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-extralight: 'Mont-ExtraLight', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-light: 'Mont-Light', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-regular: 'Mont-Regular', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-book: 'Mont-Book', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-semibold: 'Mont-SemiBold', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-bold: 'Mont-Bold', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heavy: 'Mont-Heavy', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-black: 'Mont-Black', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Apply Montserrat globally as base font */
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
