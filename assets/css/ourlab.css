@@ -1,0 +1,74 @@
+/* ==========================================================================
+   OUR LAB PAGE STYLES
+   Specific styles for the Our Lab page
+   ========================================================================== */
+
+.ourlab {
+  min-height: 60vh;
+  padding: 60px 0;
+}
+
+.ourlab .ourlab_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ourlab .ourlab_title {
+  color: #6cb156;
+  font-family: Mont-Heavy;
+  font-size: 5.5rem;
+  margin-bottom: 4rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.ourlab .ourlab_main {
+  padding: 2rem 0;
+}
+
+.ourlab .ourlab_main_text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #333;
+}
+
+/* ==========================================================================
+   OUR LAB RESPONSIVE STYLES
+   ========================================================================== */
+
+@media (max-width: 575.98px) {
+  .ourlab .ourlab_title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 8rem;
+  }
+
+  .ourlab .ourlab_main_text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .ourlab .ourlab_title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 9rem;
+  }
+
+  .ourlab .ourlab_main_text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .ourlab .ourlab_title {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .ourlab .ourlab_title {
+    font-size: 5rem;
+  }
+}

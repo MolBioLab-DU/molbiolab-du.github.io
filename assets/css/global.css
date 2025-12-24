@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   GLOBAL STYLES
+   Base styles, fonts, variables, and utilities
+   ========================================================================== */
+
+/* Body and Root Styles */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Mont-Regular;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+/* Container Styles */
+.container_all {
+  position: relative;
+}
+
+/* Ensure main content is always visible */
+main {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+#root {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Ensure all content sections are visible */
+.intro_section,
+.supervisors_section,
+.contact_section {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Ensure images load properly */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Loader Component */
+.loader_wrapper .loader_container {
+  background-color: #fff;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.loader_wrapper .loader_container .loader_inside .loading {
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #6cb156;
+  display: inline-block;
+  height: 70px;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 70px;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+/* Hide any loading spinners */
+[class*="spinner"],
+[class*="loading"],
+.spinner,
+.loading {
+  display: none !important;
+}
+
+/* Smooth transitions for better UX */
+.supervisor_card,
+.news_card,
+.publication_card {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Fade In Animation */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,477 @@
+/* ==========================================================================
+   SUPERVISORS PAGE STYLES
+   Specific styles for the Supervisors page (not the homepage section)
+   ========================================================================== */
+
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .numbering {
+    font-size: 1.4rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .publications_main {
+    padding-left: 0.5rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .publications_main
+    a
+    .paper_title {
+    font-size: 1.4rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .publications_main
+    .paper_authors {
+    font-size: 0.9rem;
+    }
+    
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .publications_section .publications_container .publications_title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block {
+    padding-bottom: 2rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .numbering,
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .publications_main
+    a
+    .paper_title {
+    font-size: 1.4rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .publications_main
+    .paper_authors {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block {
+    padding-bottom: 2rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .numbering,
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .publications_main
+    a
+    .paper_title {
+    font-size: 1.6rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .publications_main
+    .paper_authors {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block {
+    padding-bottom: 2rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .numbering,
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .publications_main
+    a
+    .paper_title {
+    font-size: 1.6rem;
+  }
+  .publications_section
+    .publications_container
+    .publications
+    .publications_block
+    .publications_main
+    .paper_authors {
+    font-size: 1rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.container_custom {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+@media (max-width: 575.98px) {
+  .container_custom {
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
+    width: 95%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container_custom {
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
+    width: 33.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container_custom {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 45rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container_custom {
+    width: 60rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .container_custom {
+    width: 75rem;
+  }
+}
+@media (min-width: 1400px) {
+  .container_custom {
+    width: 100%;
+  }
+}
+.supervisors_page_section .supervisors_page_container .supervisors_page_title {
+  color: #6cb156;
+  font-family: Mont-Heavy;
+  font-size: 5.5rem;
+  margin-bottom: 4rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisors_btn_wrapper {
+  text-align: center;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisors_btn_wrapper
+  .supervisor_btn {
+  background-color: #fff;
+  border: 0.2rem solid #6cb156;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  font-family: Mont-Regular;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  outline: none;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisors_btn_wrapper
+  .supervisor_btn:hover,
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisors_btn_wrapper
+  .supervisor_btn_clicked {
+  background-color: #6cb156;
+  color: #fff;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisor_single_container {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  margin: 4rem auto;
+  padding: 3rem;
+  width: 95% !important;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisor_single_container
+  .supervisor_info
+  .supervisor_img_wrapper
+  .supervisor_img {
+  width: 100%;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisor_single_container
+  .supervisor_info
+  .info_texts {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin-left: 1.2rem;
+  text-align: left;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisor_single_container
+  .supervisor_info
+  .info_texts
+  .info_texts_wrapper
+  .title {
+  color: #6cb156;
+  font-family: Mont-Bold;
+  font-size: 2.5rem;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisor_single_container
+  .supervisor_info
+  .info_texts
+  .info_texts_wrapper
+  .designation {
+  font-family: Mont-Regular;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisor_single_container
+  .supervisor_info
+  .info_texts
+  .info_texts_wrapper
+  .institution {
+  font-family: Mont-Regular;
+  font-size: 1.2rem;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisor_single_container
+  .supervisor_info
+  .info_texts
+  .info_texts_wrapper
+  .email {
+  font-family: Mont-Regular;
+  font-size: 1rem;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisor_single_container
+  .supervisor_details {
+  margin-top: 3rem;
+  text-align: justify;
+}
+.supervisors_page_section
+  .supervisors_page_container
+  .supervisors_page_main
+  .supervisor_single_container
+  .supervisor_details
+  .supervisor_details_text {
+  font-size: 1.2rem;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 575.98px) {
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_title {
+    color: #6cb156;
+    font-family: Mont-Heavy;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    padding-top: 10rem;
+    text-align: center;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisors_btn_wrapper {
+    text-align: center;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisors_btn_wrapper
+    .supervisor_btn {
+    background-color: #fff;
+    border: 0.2rem solid #6cb156;
+    border-radius: 0.5rem;
+    font-family: Mont-Regular;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    outline: none;
+    padding: 0.5rem;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisors_btn_wrapper
+    .supervisor_btn_clicked {
+    background-color: #6cb156;
+    color: #fff;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisor_single_container {
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+    margin: 4rem auto;
+    padding: 1.5rem;
+    width: 95% !important;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisor_single_container
+    .supervisor_info
+    .supervisor_img_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisor_single_container
+    .supervisor_info
+    .supervisor_img_wrapper
+    .supervisor_img {
+    width: 65%;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisor_single_container
+    .supervisor_info
+    .info_texts {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 1.2rem;
+    text-align: left;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisor_single_container
+    .supervisor_info
+    .info_texts
+    .info_texts_wrapper
+    .title {
+    color: #6cb156;
+    font-family: Mont-Bold;
+    font-size: 2.2rem;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisor_single_container
+    .supervisor_info
+    .info_texts
+    .info_texts_wrapper
+    .designation {
+    font-family: Mont-Regular;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisor_single_container
+    .supervisor_info
+    .info_texts
+    .info_texts_wrapper
+    .institution {
+    font-family: Mont-Regular;
+    font-size: 1.2rem;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisor_single_container
+    .supervisor_info
+    .info_texts
+    .info_texts_wrapper
+    .email {
+    font-family: Mont-Regular;
+    font-size: 1rem;
+  }
+  .supervisors_page_section
+    .supervisors_page_container
+    .supervisors_page_main
+    .supervisor_single_container
+    .supervisor_details {
+    font-size: 1rem;
+    margin-top: 3rem;
+    text-align: justify;
+  }
+}

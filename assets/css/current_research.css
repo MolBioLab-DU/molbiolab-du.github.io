@@ -1,0 +1,219 @@
+/* ==========================================================================
+   CURRENT RESEARCH PAGE STYLES
+   Specific styles for the Current Research page
+   ========================================================================== */
+
+.current_research_section .current_research_container .current_research_title {
+  color: #6cb156;
+  font-family: Mont-Heavy;
+  font-size: 5.5rem;
+  margin-bottom: 4rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.current_research_section .current_research_container .current_research_main {
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.current_research_section
+  .current_research_container
+  .current_research_main
+  .research_block {
+  display: flex;
+  padding-bottom: 4rem;
+}
+
+.current_research_section
+  .current_research_container
+  .current_research_main
+  .research_block
+  .research_text_block {
+  padding-right: 3rem;
+  width: 65%;
+}
+
+.current_research_section
+  .current_research_container
+  .current_research_main
+  .research_block
+  .research_text_block
+  .research_title {
+  color: #6cb156;
+  font-family: Mont-Bold;
+  font-size: 1.8rem;
+}
+
+.current_research_section
+  .current_research_container
+  .current_research_main
+  .research_block
+  .research_text_block
+  .research_description {
+  font-size: 1.1rem;
+  padding-top: 1rem;
+}
+
+.current_research_section
+  .current_research_container
+  .current_research_main
+  .research_block
+  .research_img {
+  width: 35%;
+}
+
+.current_research_section
+  .current_research_container
+  .current_research_main
+  .research_block
+  .research_img
+  img {
+  width: 100%;
+}
+
+/* ==========================================================================
+   CURRENT RESEARCH RESPONSIVE STYLES
+   ========================================================================== */
+
+@media (max-width: 575.98px) {
+  .current_research_section
+    .current_research_container
+    .current_research_title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block {
+    display: block;
+    padding-bottom: 4rem;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_text_block {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_text_block
+    .research_title {
+    font-size: 1.5rem;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_text_block
+    .research_description {
+    font-size: 1rem;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_img {
+    padding-top: 2rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .current_research_section
+    .current_research_container
+    .current_research_title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block {
+    display: block;
+    padding-bottom: 4rem;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_text_block {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_text_block
+    .research_description {
+    font-size: 1rem;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_img {
+    padding-top: 2rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_text_block {
+    width: 60%;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_text_block
+    .research_description {
+    font-size: 1rem;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_img {
+    width: 40%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_text_block {
+    width: 60%;
+  }
+
+  .current_research_section
+    .current_research_container
+    .current_research_main
+    .research_block
+    .research_img {
+    width: 40%;
+  }
+}

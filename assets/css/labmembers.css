@@ -1,0 +1,298 @@
+/* ==========================================================================
+   LAB MEMBERS PAGE STYLES
+   Specific styles for the Lab Members page
+   ========================================================================== */
+
+.labmembers_page_section .labmembers_page_container .labmembers_page_title {
+  color: #6cb156;
+  font-family: Mont-Heavy;
+  font-size: 5.5rem;
+  margin-bottom: 4rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_btn_wrapper {
+  text-align: center;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_btn_wrapper
+  .labmembers_btn {
+  background-color: #fff;
+  border: 0.2rem solid #6cb156;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  font-family: Mont-Regular;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  outline: none;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_btn_wrapper
+  .labmembers_btn:hover,
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_btn_wrapper
+  .labmembers_btn_clicked {
+  background-color: #6cb156;
+  color: #fff;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_card_wrapper {
+  margin: 4rem auto 3rem;
+  max-width: 80rem;
+  min-height: 100vh;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_card_wrapper
+  .labmembers_card_container {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_card_wrapper
+  .labmembers_card_container
+  .member_card {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  margin: 1rem auto;
+  max-width: 20rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_card_wrapper
+  .labmembers_card_container
+  .member_card
+  .member_img {
+  border-radius: 0.5rem;
+  height: 10rem;
+  width: auto;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_card_wrapper
+  .labmembers_card_container
+  .member_card
+  .member_info_wrapper {
+  margin-top: 0.8rem;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_card_wrapper
+  .labmembers_card_container
+  .member_card
+  .member_info_wrapper
+  .name {
+  align-items: center;
+  color: #6cb156;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 700;
+  height: 4.4rem;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_card_wrapper
+  .labmembers_card_container
+  .member_card
+  .member_info_wrapper
+  .designation {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_card_wrapper
+  .labmembers_card_container
+  .member_card
+  .member_info_wrapper
+  .email {
+  align-items: center;
+  display: flex;
+  height: 2.8rem;
+  justify-content: center;
+}
+.labmembers_page_section
+  .labmembers_page_container
+  .labmembers_page_main
+  .labmembers_card_wrapper
+  .labmembers_card_container
+  .member_card
+  .member_info_wrapper
+  .email
+  span {
+  font-weight: 700;
+}
+@media (max-width: 575.98px) {
+  .labmembers_page_section .labmembers_page_container .labmembers_page_title {
+    font-size: 3rem;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_btn_wrapper {
+    text-align: center;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_btn_wrapper
+    .labmembers_btn {
+    background-color: #fff;
+    border: 0.2rem solid #6cb156;
+    border-radius: 0.5rem;
+    font-family: Mont-Regular;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    outline: none;
+    padding: 0.5rem;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_btn_wrapper
+    .labmembers_btn_clicked {
+    background-color: #6cb156;
+    color: #fff;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper {
+    margin: 4rem auto 3rem;
+    max-width: 80rem;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .member_card {
+    border-radius: 0.5rem;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3);
+    margin: 2rem auto;
+    max-width: 20rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .member_card
+    .member_img {
+    border-radius: 0.5rem;
+    height: 10rem;
+    width: auto;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .member_card
+    .member_info_wrapper {
+    margin-top: 0.8rem;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .member_card
+    .member_info_wrapper
+    .name {
+    align-items: center;
+    color: #6cb156;
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 700;
+    height: 4.4rem;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .member_card
+    .member_info_wrapper
+    .designation {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .member_card
+    .member_info_wrapper
+    .email {
+    align-items: center;
+    display: flex;
+    height: 2.8rem;
+    justify-content: center;
+  }
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .member_card
+    .member_info_wrapper
+    .email
+    span {
+    font-weight: 700;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .col-sm-md-4 {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .col-sm-md-4 {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .labmembers_page_section
+    .labmembers_page_container
+    .labmembers_page_main
+    .labmembers_card_wrapper
+    .col-sm-md-4 {
+    width: 33.33%;
+  }
+}

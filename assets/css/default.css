@@ -1,0 +1,393 @@
+/* ==========================================================================
+   DEFAULT LAYOUT STYLES
+   Header, footer, navigation, and base layout components
+   ========================================================================== */
+
+/* ==========================================================================
+   HEADER / NAVBAR STYLES (Bootstrap 5)
+   ========================================================================== */
+
+/* Header color variable - can be overridden per page */
+:root {
+  --header-color: black;
+}
+
+.site-header {
+  color: var(--header-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 0.6875rem 0;
+  transition: background-color 0.2s ease-out;
+}
+
+/* Custom navbar styling to match existing design */
+.navbar {
+  background: transparent !important;
+}
+
+.navbar-brand img {
+  height: 40px;
+  -webkit-filter: drop-shadow(2px 3px 1.5px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(2px 3px 1.5px rgba(0, 0, 0, 0.4));
+  transition: all 0.2s ease-out;
+}
+
+.navbar-nav .nav-link {
+  color: var(--header-color) !important;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #6cb156 !important;
+}
+
+/* Navbar Toggler / Hamburger */
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  display: none;
+}
+
+/* Custom hamburger icon */
+.hamburger-line {
+  background: var(--header-color);
+  height: 3px;
+  width: 32px;
+  left: 8px;
+  position: absolute;
+  border-radius: 9em;
+  transition: 0.4s cubic-bezier(0,0,0,1);
+}
+
+.hamburger-line.line-1 { 
+  top: 13px; 
+}
+
+.hamburger-line.line-2 { 
+  top: 23px; 
+  transition: 0.2s cubic-bezier(0,0,0,1); 
+}
+
+.hamburger-line.line-3 { 
+  top: 33px; 
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  animation: appear 0.2s ease-out;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-out;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #6cb156;
+}
+
+/* Dropdown animation */
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+/* Header style when scrolled */
+.header_style {
+  background: #fff !important;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+  color: #000 !important;
+}
+
+.header_style .navbar-nav .nav-link {
+  color: #000 !important;
+}
+
+.header_style .hamburger-line {
+  background: #000;
+}
+
+/* Mobile menu styling */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .navbar-nav {
+    gap: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    color: #000 !important;
+  }
+}
+
+/* Navbar Container */
+.navbar_container {
+  z-index: 1000;
+}
+
+/* Mobile menu visibility classes */
+.menu_main_visible {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  max-height: 100vh !important;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.menu_main_hidden {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Accordion styles for mobile menu */
+.accordion-collapse {
+  transition: height 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================================================
+   FOOTER / CONTACT SECTION
+   ========================================================================== */
+
+.contact_section {
+  background-color: #6cb156;
+}
+
+.contact_section .contact_container {
+  padding: 6rem 3rem 4rem 2rem;
+}
+
+.contact_section .contact_container .contact_title_common {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.contact_section .contact_container .contact_us_wrapper .contact_us_info a,
+.contact_section .contact_container .contact_us_wrapper .contact_us_info p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact_section .contact_container .contact_us_wrapper a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact_section .contact_container .follow_us_title {
+  margin-top: 3rem;
+}
+
+.contact_section .contact_container .follow_us_icons img {
+  margin-right: 1rem;
+  width: 1.5rem;
+}
+
+.contact_section .quick_links_wrapper {
+  text-align: center;
+}
+
+.contact_section .quick_links_wrapper .quick_links_info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.contact_section .quick_links_wrapper .quick_links_info p {
+  display: inline-block;
+}
+
+.contact_section .quick_links_wrapper .quick_links_info p a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.contact_section .find_us_wrapper {
+  text-align: right;
+}
+
+.contact_section .find_us_wrapper .find_us_info {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact_section .find_us_wrapper .institution_logo {
+  margin-top: 2rem;
+}
+
+.contact_section .find_us_wrapper .institution_logo img {
+  -webkit-filter: drop-shadow(2px 3px 1.5px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(2px 3px 1.5px rgba(0, 0, 0, 0.4));
+  height: 4.5rem;
+  margin-left: 1.5rem;
+  width: auto;
+}
+
+.contact_section footer {
+  color: #fff;
+  font-family: Mont-Regular;
+  font-size: 0.9rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.contact_section footer .hr_line {
+  background-color: #fff;
+  height: 1px;
+  margin: 1rem auto 0;
+  max-width: 10rem;
+}
+
+.contact_section footer .creator_1,
+.contact_section footer .creator_2 {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.contact_section footer .creator_1 a,
+.contact_section footer .creator_2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact_section footer .creator_2 {
+  display: none;
+}
+
+/* ==========================================================================
+   FOOTER RESPONSIVE STYLES
+   ========================================================================== */
+
+@media (max-width: 575.98px) {
+  .contact_section .contact_container .contact_us_wrapper {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .contact_section .contact_container .contact_us_wrapper .follow_us_icons img {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .contact_section .contact_container .quick_links_wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .contact_section .contact_container .find_us_wrapper {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .contact_section .contact_container .find_us_wrapper .institution_logo {
+    text-align: center;
+  }
+
+  .contact_section .contact_container .find_us_wrapper .institution_logo img {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .contact_section .contact_container footer .creator_1 {
+    display: none;
+  }
+
+  .contact_section .contact_container footer .creator_2 {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contact_section .contact_container .contact_us_wrapper {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .contact_section .contact_container .contact_us_wrapper .follow_us_icons img {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .contact_section .contact_container .quick_links_wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .contact_section .contact_container .find_us_wrapper {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .contact_section .contact_container .find_us_wrapper .institution_logo {
+    text-align: center;
+  }
+
+  .contact_section .contact_container .find_us_wrapper .institution_logo img {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact_section .contact_container .find_us_wrapper {
+    text-align: center;
+  }
+
+  .contact_section .contact_container .find_us_wrapper .institution_logo {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contact_section .contact_container {
+    padding: 6rem 2rem 4rem;
+  }
+}

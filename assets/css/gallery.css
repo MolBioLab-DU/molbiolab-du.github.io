@@ -1,0 +1,100 @@
+/* ==========================================================================
+   GALLERY PAGE STYLES
+   Specific styles for the Gallery page
+   ========================================================================== */
+
+.gallery_page_section .gallery_page_container .gallery_page_title {
+  color: #6cb156;
+  font-family: Mont-Heavy;
+  font-size: 5.5rem;
+  margin-bottom: 4rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.gallery_page_section .gallery_page_container .gallery_page_main {
+  background: #fff;
+  -webkit-columns: 3;
+  column-count: 3;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.gallery_page_section
+  .gallery_page_container
+  .gallery_page_main
+  .photo_container
+  img {
+  border-radius: 3px;
+  height: 100%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery_page_section
+  .gallery_page_container
+  .gallery_page_main
+  .photo_container
+  img:hover {
+  transform: scale(1.02);
+}
+
+/* Gallery Lightbox */
+.gallery_lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.gallery_lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* ==========================================================================
+   GALLERY RESPONSIVE STYLES
+   ========================================================================== */
+
+@media (max-width: 575.98px) {
+  .gallery_page_section .gallery_page_container .gallery_page_title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .gallery_page_section .gallery_page_container .gallery_page_main {
+    -webkit-columns: 1;
+    column-count: 1;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .gallery_page_section .gallery_page_container .gallery_page_title {
+    font-size: 4rem;
+  }
+
+  .gallery_page_section .gallery_page_container .gallery_page_main {
+    -webkit-columns: 2;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .gallery_page_section .gallery_page_container .gallery_page_main {
+    -webkit-columns: 2;
+    column-count: 2;
+  }
+}
