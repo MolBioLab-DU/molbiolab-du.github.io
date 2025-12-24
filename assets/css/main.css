@@ -3133,3 +3133,86 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
 }
 /*# sourceMappingURL=main.e3d231ef.css.map*/
+
+
+/* Additional CSS fixes for static site */
+/* Ensure main content is always visible */
+main {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+#root {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Hide any loading spinners */
+[class*="spinner"],
+[class*="loading"],
+.spinner,
+.loading {
+  display: none !important;
+}
+
+/* Mobile menu visibility classes */
+.menu_main_visible {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  max-height: 100vh !important;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.menu_main_hidden {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Ensure all content sections are visible */
+.intro_section,
+.supervisors_section,
+.contact_section {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix carousel display */
+.carousel_custom {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.slick-slider {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Smooth transitions for better UX */
+.supervisor_card,
+.news_card,
+.publication_card {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Ensure images load properly */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix any potential z-index issues */
+.navbar_container {
+  z-index: 1000;
+}
+
+/* Accordion styles for mobile menu */
+.accordion-collapse {
+  transition: height 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,31 @@
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler dependencies
+/vendor/bundle/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# dotenv environment variables
+.env
+
+# VSCode settings
+.vscode/
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Node modules (if using npm/yarn)
+node_modules/
