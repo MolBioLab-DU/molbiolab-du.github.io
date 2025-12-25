@@ -13,7 +13,11 @@ permalink: /news/
         {% for item in site.data.news %}
         <div class="news_block">
           <div class="news_img">
+            {% if item.image %}
             <img alt="{{ item.title }}" src="{{ item.image }}"/>
+            {% else %}
+            <img alt="{{ item.title }}" src="/assets/media/news.png"/>
+            {% endif %}
           </div>
           <div class="news_text_block">
             <div class="news_date">{{ item.date }}</div>
