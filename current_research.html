@@ -3,22 +3,17 @@ layout: default
 title: Current Research | Molecular Biology Lab
 description: Molecular Biology Lab is a research laboratory of the Department of Biochemistry and Molecular Biology, University of Dhaka
 permalink: /current-research/
-image: https://molbiolab.du.ac.bd/static/media/mol-bio-lab.jpg
 ---
 
 <section class="current_research_section">
   <div class="container_custom">
     <div class="current_research_container">
-      <h1 class="current_research_title">
-        Current Research
-      </h1>
+      <h1 class="current_research_title">Current Research</h1>
       <div class="current_research_main">
         {% for project in site.data.current_research %}
         <div class="research_block">
           <div class="research_text_block">
-            <div class="research_title">
-              {{ project.title }}
-            </div>
+            <div class="research_title">{{ project.title }}</div>
             <div class="research_description">
               <div>
                 <p>{{ project.description }}</p>
@@ -26,10 +21,11 @@ image: https://molbiolab.du.ac.bd/static/media/mol-bio-lab.jpg
             </div>
           </div>
           <div class="research_img">
-            <img alt="{{ project.title }}" src="{{ project.image }}"/>
+            <img alt="{{ project.title }}" src="{{ project.image | relative_url }}"/>
           </div>
         </div>
         {% endfor %}
       </div>
     </div>
   </div>
+</section>

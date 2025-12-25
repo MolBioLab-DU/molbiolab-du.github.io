@@ -23,23 +23,33 @@ current:
     email: fahmidaanika-2014716955@bot.du.ac.bd
     image: https://cdn.sanity.io/images/r6m76v2w/production/d2890871587730b76f3e08adde645c1e06be9c43-472x562.jpg
 
-  - name: Md Rakibul Islam
-    designation: MS Thesis Student
-    session: 2021-22
-    email: marufislammaruf000@gmail.com
-    image: https://cdn.sanity.io/images/r6m76v2w/production/067c7a4b97ab85cdc8e4279421b425058e2f8f69-3455x2921.jpg
+  
+  - name: Chunnu Bhai
+    designation: PhD Student
+    session: 2022-23
+    email:
 
-  - name: Rabeya
+  - name: Tasfiah Tahsin Prima
     designation: MS Thesis Student
-    session: 2021-22
-    email: rabeya1541999@gmail.com
-    image: https://cdn.sanity.io/images/r6m76v2w/production/6d06c6bf8d8dd4d9552f656496358a7d2b4a2e3d-939x1141.jpg
+    session: 2022-23
+    email: tasfia.prima33@gmail.com
+    image: assets/media/prima.jpg
 
-  - name: Jayoti Mandal
+  - name: Atiq Akhyar
     designation: MS Thesis Student
-    session: 2021-22
-    email: jayotimandal@gmail.com
-    image: https://cdn.sanity.io/images/r6m76v2w/production/10aef64ea220680e3ea438b51efee97d563258f5-3000x4000.jpg
+    session: 2022-23
+    email: linkedin.com/in/atiq-akhyar-4a936b201
+    image: assets/media/atiq.jpeg
+
+  - name: Ramisha
+    designation: MS Thesis Student
+    session: 2022-23
+    email:
+
+  - name: Piya 
+    designation: MS Thesis Student
+    session: 2022-23
+    email:
 
   - name: Rubel Hossain
     designation: Laboratory Technician
@@ -102,6 +112,24 @@ alumni:
     session: 2020-21
     email: jahid-2016114159@bmb.du.ac.bd
     image: https://cdn.sanity.io/images/r6m76v2w/production/bd85b40a863118e4965412ece247108e5d0f0a26-1912x1911.jpg
+
+  - name: Md Rakibul Islam
+    designation: MS Thesis Student
+    session: 2021-22
+    email: marufislammaruf000@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/067c7a4b97ab85cdc8e4279421b425058e2f8f69-3455x2921.jpg
+
+  - name: Rabeya
+    designation: MS Thesis Student
+    session: 2021-22
+    email: rabeya1541999@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/6d06c6bf8d8dd4d9552f656496358a7d2b4a2e3d-939x1141.jpg
+
+  - name: Jayoti Mandal
+    designation: MS Thesis Student
+    session: 2021-22
+    email: jayotimandal@gmail.com
+    image: https://cdn.sanity.io/images/r6m76v2w/production/10aef64ea220680e3ea438b51efee97d563258f5-3000x4000.jpg
 
   - name: Md Enayet Ullah
     designation: MS Thesis Student

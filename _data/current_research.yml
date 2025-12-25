@@ -1,6 +1,6 @@
-- title: Complete Project
-  description: Hello there. I am using watsapp
-  image: https://cdn.sanity.io/images/r6m76v2w/production/9091927fd493dd17fdc61440e70ccb1a9d67c2b1-762x791.jpg
+- title: Process development for the heterologous expression of the novel lantibiotic, Homicorcin
+  description: This research aims to develop a safe and scalable heterologous expression system for the production of homicorcin, a novel lantibiotic with strong activity against multidrug-resistant Gram-positive pathogens. Homicorcin, originally identified from Staphylococcus hominis, possesses a unique biosynthetic gene cluster encoding enzymes for peptide modification, transport, immunity, and regulation. To overcome safety and scalability limitations associated with its native, mildly pathogenic producer, all eight homicorcin biosynthetic genes will be cloned and expressed in the food-grade, GRAS organism Lactococcus lactis NZ9000 using nisin-inducible expression vectors. The study will focus on vector construction, validation of gene expression, and optimization of culture media and induction conditions to enhance peptide yield and stability. Purified homicorcin will be structurally characterized using LC-MS/MS and NMR, and its antimicrobial efficacy will be evaluated against clinically relevant resistant pathogens. This work will enable sustainable production of homicorcin and support the development of novel solutions to combat antimicrobial resistance.
+  image: assets/media/homicorcin.png
 
 - title: Page Under Construction
   description: asdjuasidaskjaljd

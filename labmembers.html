@@ -27,7 +27,11 @@ permalink: /labmembers
           {% for member in site.data.labmembers.current %}
           <div class="col-12 col-sm-md-4 col-md-3">
             <div class="member_card">
-              <img class="member_img" src="{{ member.image }}" alt="{{ member.name }}">
+              {% if member.image %}
+                <img class="member_img" src="{{ member.image }}" alt="{{ member.name }}">
+                {% else %}
+                <img class="member_img" src="/assets/media/default.png" alt="Default Member">
+                {% endif %}
               <div class="member_info_wrapper">
                 <div class="name"><span>{{ member.name }}</span></div>
                 <p class="designation">{{ member.designation }}</p>
@@ -46,7 +50,11 @@ permalink: /labmembers
           {% for member in site.data.labmembers.alumni %}
           <div class="col-12 col-sm-md-4 col-md-3">
             <div class="member_card">
-              <img class="member_img" src="{{ member.image }}" alt="{{ member.name }}">
+                {% if member.image %}
+                <img class="member_img" src="{{ member.image }}" alt="{{ member.name }}">
+                {% else %}
+                <img class="member_img" src="/assets/media/default.png" alt="Default Member">
+                {% endif %}
               <div class="member_info_wrapper">
                 <div class="name"><span>{{ member.name }}</span></div>
                 <p class="designation">{{ member.designation }}</p>
